@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 71.25rem;
+    margin: 0 auto;
+
+}
+a{
+    text-decoration: none;
+}
+body {
+    /*background: url("./img/c.jpg") no-repeat center/cover;*/
+    background: linear-gradient( to top right, black, blueviolet,black) no-repeat;
+    height: 100vh;
+}
+.c-label {
+    text-align: center;
+    padding: 2.8rem 0 0 0;
+}
+.c-label label{
+    text-transform: uppercase;
+    color: #5775ef;
+    font-size: 1rem;
+    border: .09rem solid #00ffd0;
+    padding: .4rem 1rem;
+    border-radius: 15%;
+    background: rgba(238, 42, 42, 0.1);
+    transform: scale(1.1);
+    transition: .4s;
+}
+.c-label label:hover{
+    background: #b4abab;
+   color: #fdfdfd;
+    border: .009rem solid #595946;
+}
+.tabs{
+    display: flex;
+    justify-content: center;
+    padding: 2.25rem 0 0 0;
+}
+/**/
+.tabs img{
+    padding: 0 2rem;
+}
+#html:checked ~ .css,
+#html:checked ~ .text,
+#html:checked ~ .js {
+    /*opacity: .1;*/
+    transition: .4s;
+     display: none;
+}
+#css:checked ~ .html,
+#css:checked ~ .text,
+#css:checked ~ .js {
+    /*opacity: .1;*/
+     display: none;
+    transition: .4s;
+}
+#js:checked ~ .text,
+#js:checked ~ .css,
+#js:checked ~ .html {
+    /*opacity: .1;*/
+     display: none;
+    transition: .4s;
+}
+#no:checked ~ .text,
+#no:checked ~ .css,
+#no:checked ~ .html,
+#no:checked ~ .js{
+    display: none;
+    transition: .4s;
+}
+#text:checked ~ .css,
+#text:checked ~ .html,
+#text:checked ~ .js{
+    display: none;
+    transition: .4s;
+}
+#all:checked ~ .text,
+#all:checked ~ .css,
+#all:checked ~ .js,
+#all:checked ~ .html{
+    opacity: .3;
+}
+.tabs input{
+    display: none;
+}
+.text p{
+    font-size: 1.5rem;
+    color: #5775ef;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height:2.2rem ;
+}
+.text ol{
+    padding: 0 0 0 260px;
+}
+.text ol li{
+    color: #1c264f;
+    font-size: 30px;
+font-weight: 550;
+font-family: sans-serif;
+    padding: 2px;
+}
+.text h1{
+    color: #1c264f;
+    text-transform: uppercase      ;
+    font-weight: 50;
+    font-family: sans-serif;
+    padding: 0 0 10px 0;
+}
+
